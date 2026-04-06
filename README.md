@@ -1,12 +1,12 @@
 # device-share
 
-Share your localhost with a QR code — instantly, securely.
+device-share provides instant access to your local application on any device via QR code, with no setup required.
 
 ```bash
 npx device-share --port 3000
 ```
 
-Scan the QR code on your phone. Done.
+Scan the QR code with your device. Done in seconds.
 
 ---
 
@@ -31,11 +31,17 @@ device-share --port <port> [options]
 
 Options:
   --port <port>       Local port to share (required)
-  --tunnel            Share via Cloudflare tunnel (cross-network, avoid with real APIs)
+  --tunnel            Share via Cloudflare tunnel (cross-network, not recommended for real APIs)
   --expires <minutes> Auto-close after N minutes (default: 60)
   --no-password       Disable password protection
   --help              Show help
 ```
+
+---
+
+## Demo
+
+Run the command → scan QR → your app opens instantly on your device.
 
 ---
 
@@ -117,6 +123,26 @@ device-share --port 3000 --expires 30
 - Node.js 16+
 - For tunnel mode: internet connection + `cloudflared` (installed automatically)
 - For local mode: phone and laptop on the same WiFi
+
+---
+
+## Why?
+
+Testing on other devices during development is annoying:
+
+- Manually typing localhost URLs
+- Using tools like ngrok for simple cases
+- Dealing with network and access issues
+
+device-share simplifies this process into a single command.
+
+---
+
+## Use cases
+
+- Testing responsive UI on your phone
+- Demoing your app to others quickly
+- Checking mobile behavior during development
 
 ---
 
