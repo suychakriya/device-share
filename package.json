@@ -1,10 +1,10 @@
 {
-  "name": "dev-share",
+  "name": "device-share",
   "version": "1.0.0",
   "description": "Share your localhost securely with a QR code",
   "main": "index.js",
   "bin": {
-    "dev-share": "./index.js"
+    "device-share": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

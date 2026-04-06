@@ -14,7 +14,7 @@ const { logInfo } = require('./src/logger')
 const DEFAULT_EXPIRY_MINUTES = 60
 
 program
-  .name('dev-share')
+  .name('device-share')
   .description('Share your localhost securely with a QR code')
   .version('1.0.0')
   .requiredOption('--port <port>', 'Local port to share (e.g. 3000)')
